@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="https://cdnjs.loli.net/ajax/libs/mdui/0.4.3/css/mdui.min.css">
+    <script src="https://cdnjs.loli.net/ajax/libs/mdui/0.4.3/js/mdui.min.js"></script>
+    <script src="color-thief.js"></script>
+    <title>Grassblock's Home</title>
+    <style>body {background-image: url(https://bing.ioliu.cn/v1/rand) ;}</style>
+   <link rel="stylesheet" href="APlayer.min.css">
+<script src="APlayer.min.js"></script>
+<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script> 
+
+
+<style>@font-face { font-family: 'JetBrainsMono’; src: url(‘JetBrainsMono-Regular.ttf’);}</style>
+
+</head>
+<body class="mdui-theme-accent-light-blue mdui-theme-primary-mdui-color-blue mdui-drawer-body-left">
+   <script src="https://albertincx-telechat-2.glitch.me/app/chatbot?g=1001229082684" async></script>
+<script type="text/javascript">window.instantChatBotUidName = 'userId'</script>
+
+    <script>
+        var browsehappy_config = {
+            ie: 12,
+            type: 'box',
+            debug: false,
+            tip: "站点目前不支持 IE。请 ",
+            show: ['firefox', 'chrome']
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/gh/a632079/browserhappy@0.0.1/browserhappy.min.js"></script>
+
+<script>
+/* 鼠标点击文字特效 */
+ var f_idx = 0;
+ var c_idx = 0;
+ jQuery(document).ready(function($) {
+  $("body").click(function(e) {
+   var font = new Array("富强", "民主", "文明", "和谐", "自由", "平等", "公正" ,"法治", "爱国", "敬业", "诚信", "友善");
+ var color = new Array('#ff0000','#eb4310','#f6941d','#fbb417','#ffff00','#cdd541','#99cc33','#3f9337','#219167','#239676','#24998d','#1f9baa','#0080ff','#3366cc','#333399','#003366','#800080','#a1488e','#c71585','#bd2158');
+   var $i = $("<span />").text(font[f_idx]);
+   f_idx = (f_idx + 1) % font.length;
+ c_idx = (c_idx + 1) % color.length;
+   var x = e.pageX,
+    y = e.pageY;
+   $i.css({
+    "z-index": 99999999999999999999999999999999999999999999999999999999999999999999999999 ,
+    "top": y - 20,
+    "left": x,
+    "position": "absolute",
+    "font-weight": "bold",
+    "color": color[c_idx]
+   });
+   $("body").append($i);
+   $i.animate({
+     "top": y - 180,
+     "opacity": 0
+    },
+    1500,
+    function() {
+     $i.remove();
+    });
+  });
+ });
+</script>
+
+<div class="mdui-drawer" id="left-drawer">
+    ... drawer content ...
+  </div>
+
+	<div class="mdui-toolbar" mdui-headroom style="position: fixed; top: 0; left: 0; right: 0;">
+  <a href="javascript:;" class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#left-drawer'}"><i class="mdui-icon material-icons">menu</i></a>
+  <span class="mdui-typo-title">主页</span>
+  <div class="mdui-toolbar-spacer"></div>
+  <a href="javascript:    	const ap = new APlayer({
+    container: document.getElementById('player1'),
+    mini: false,
+    autoplay: false,
+    theme: '#FADFA3',
+    loop: 'all',
+    order: 'random',
+    preload: 'auto',
+    volume: 0.7,
+    mutex: true,
+    listFolded: false,
+    listMaxHeight: 90,
+    lrcType: 3,
+    audio: [
+        {
+            name: 'Alone',
+            artist: 'Alan Walker',
+            url: 'http://music.163.com/song/media/outer/url?id=444269135.mp3',
+            cover: 'cover.jpg',
+            lrc: 'lrc.lrc',
+            theme: '#536161'
+        },
+        {
+            name: 'Bad Apple',
+            artist: 'のみこ Masayoshi Minoshima',
+            url: 'http://music.163.com/song/media/outer/url?id=22645196.mp3',
+            cover: 'cover2.jpg',
+            lrc: 'lrc2.lrc',
+            theme: '#B59AA1'
+        }
+    ]
+});
+;" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">music_note</i></a>
+  <a href="javascript:location.reload();" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">refresh</i></a>
+  <a href="javascript:;" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">more_vert</i></a>
+</div>
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+
+<div id="ava" align="center">
+<img class="mdui-img-circle" src="https://i.loli.net/2020/03/30/c375MLd4JWXZFr2.png" width="25%" height="25%"/> </div>
+<br>
+
+你好 这里是草方块的主页，请看看下面的选项，或者点击下方的 <i class="mdui-icon material-icons">play_circle_outline</i> 图标 听音乐（<p>
+<div id="player1">
+
+        </div>
+<style>h5{padding-left:20px}  ;</style>
+<style>mdui-btn mdui-btn-raised mdui-ripple mdui-color-theme-accent{padding-left:20px} ;</style>
+<div class="mdui-typo"><h5>博客</h5><div>
+<ul class="mdui-list">
+  <li class="mdui-list-item mdui-ripple">
+    <div class="mdui-list-item-avatar"><img src="Typecho.png"/></div>
+    <div class="mdui-list-item-content">Typecho</div>
+    <a href="https://blog.acfk.xyz"><i class="mdui-list-item-icon mdui-icon material-icons">open_in_new</i></a>
+    <a href="https://type.acfk.xyz"><i class="mdui-list-item-icon mdui-icon material-icons">center_focus_strong</i></a>
+  </li>
+   <li class="mdui-list-item mdui-ripple">
+    <div class="mdui-list-item-avatar"><img src="Hexo.png"/></div>
+    <div class="mdui-list-item-content">Hexo</div>
+    <a href="https://daily.acfk.xyz"><i class="mdui-list-item-icon mdui-icon material-icons">open_in_new</i></a>
+  </li>
+  <li class="mdui-list-item mdui-ripple">
+    <div class="mdui-list-item-avatar"><img src="Postach.png"/></div>
+    <div class="mdui-list-item-content">Postach</div>
+    <a href="https://gbxd.postach.io"><i class="mdui-list-item-icon mdui-icon material-icons">open_in_new</i></a>
+  </li>
+</ul>
+<br>
+<br>
+<br>
+
+网站已在Github上运行 <span id="runtime_span"></span> .<br/>
+		<script>
+		function show_runtime() {
+			window.setTimeout("show_runtime()",1000);
+			var X = new Date("06/20/2020 20:00:00"),
+				Y = new Date(),
+				T = (Y.getTime()-X.getTime()),
+				M = 24*60*60*1000,
+				a = T/M,
+				A = Math.floor(a),
+				b = (a-A)*24,
+				B = Math.floor(b),
+				c = (b-B)*60,
+				C = Math.floor((b-B)*60),
+				D = Math.floor((c-C)*60);
+			runtime_span.innerHTML = A+" 天 "+B+" 时 "+C+" 分 "+D+" 秒";
+		}
+		show_runtime();
+		</script>
+
+
+
+
+    <script>
+const colorThief = new ColorThief();
+const image = new Image();
+const xhr = new XMLHttpRequest();
+const setTheme = (index) => {
+    if (!ap.list.audios[index].theme) {
+        xhr.onload = function(){
+            let coverUrl = URL.createObjectURL(this.response);
+            image.onload = function(){
+                let color = colorThief.getColor(image);
+                ap.theme(`rgb(${color[0]}, ${color[1]}, ${color[2]})`, index);
+                URL.revokeObjectURL(coverUrl)
+            };
+            image.src = coverUrl;
+        }
+        xhr.open('GET', ap.list.audios[index].cover, true);
+        xhr.responseType = 'blob';
+        xhr.send();
+    }
+};
+setTheme(ap.list.index);
+ap.on('listswitch', (index) => {
+    setTheme(index);
+});
+    </script>
+    
+    
+    <p id="demo">此生无悔入MC 来世愿做方块人！</p>
+    <script type="text/javascript">
+        var typing = {
+            arr : [],
+            init : function (ops){
+                this.arr[ops.id] = {
+                    id : ops.id,
+                    time : ops.time || 1000,
+                    isLoop : ops.isLoop || "true"
+                }
+                this.show(this.arr[ops.id]);
+            },
+            show : function (obj){
+                obj.demo = document.getElementById(obj.id);
+                obj.html = obj.demo.innerHTML;
+                obj.demo.innerHTML = "";
+                this.createTimer(obj);
+            },
+            createTimer : function (obj){
+                obj.maxlength = obj.html.length;
+                // 位置初始化为0 
+                obj.index = 0;
+                obj.timer = setInterval(function (){
+                    // 当前html中抛去最后一位,在加上对应的选项在加上_ 组成新的 html
+                    obj.demo.innerHTML = obj.demo.innerHTML.substring(0,obj.demo.innerHTML.length-1) + obj.html.charAt(obj.index) + "_";
+                    obj.index ++;
+                    if (obj.index > obj.maxlength) {
+                        if (obj.isLoop == "true") {
+                            obj.demo.innerHTML = "";
+                            obj.index = 0;
+                        }else{
+                            clearInterval(obj.timer);
+                            obj.demo.innerHTML = obj.html;
+                        }
+                    }
+                },obj.time)
+            }
+        }
+        window.onload = function (){
+            // 使用方法
+            // id 必填
+            // time 打字速度单位毫秒/个 默认每1000毫秒/个 
+            // isLoop 是否重复, 默认为true 是重复的。 
+            typing.init({id:"demo",time :500,isLoop :false});
+            
+        }
+    </script>
+    <p>Made With ❤ by at-site (@Grass_block)</p>
+</body>
+</html>
