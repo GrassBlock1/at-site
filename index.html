@@ -7,19 +7,31 @@
     <script src="https://cdnjs.loli.net/ajax/libs/mdui/0.4.3/js/mdui.min.js"></script>
     <script src="color-thief.js"></script>
     <title>Grassblock's Home</title>
-    <style>body {background-image: url(https://bing.ioliu.cn/v1/rand) ;}</style>
+    <link rel="shortcut icon" href="faviconm.png"/>
+<link rel="bookmark" href="faviconm.png"/>
    <link rel="stylesheet" href="APlayer.min.css">
 <script src="APlayer.min.js"></script>
-<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script> 
-
-
-<style>@font-face { font-family: 'JetBrainsMono’; src: url(‘JetBrainsMono-Regular.ttf’);}</style>
+<script id="chatBroEmbedCode">/* Chatbro Widget Embed Code Start */function ChatbroLoader(chats,async){async=!1!==async;var params={embedChatsParameters:chats instanceof Array?chats:[chats],lang:navigator.language||navigator.userLanguage,needLoadCode:'undefined'==typeof Chatbro,embedParamsVersion:localStorage.embedParamsVersion,chatbroScriptVersion:localStorage.chatbroScriptVersion},xhr=new XMLHttpRequest;xhr.withCredentials=!0,xhr.onload=function(){eval(xhr.responseText)},xhr.onerror=function(){console.error('Chatbro loading error')},xhr.open('GET','https://www.chatbro.com/embed.js?'+btoa(unescape(encodeURIComponent(JSON.stringify(params)))),async),xhr.send()}/* Chatbro Widget Embed Code End */ChatbroLoader({encodedChatId: '26BUT'});</script>
+<style>
+.page-bg {
+  background: url('https://api.zhoublog.xyz/pic.php');
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+</style>
 
 </head>
-<body class="mdui-theme-accent-light-blue mdui-theme-primary-mdui-color-blue mdui-drawer-body-left">
-   <script src="https://albertincx-telechat-2.glitch.me/app/chatbot?g=1001229082684" async></script>
-<script type="text/javascript">window.instantChatBotUidName = 'userId'</script>
-
+<body class="mdui-theme-accent-light-blue mdui-theme-primary-mdui-color-blue mdui-drawer-body-left" ">
+   
     <script>
         var browsehappy_config = {
             ie: 12,
@@ -30,14 +42,13 @@
         };
     </script>
     <script src="https://cdn.jsdelivr.net/gh/a632079/browserhappy@0.0.1/browserhappy.min.js"></script>
-
 <script>
 /* 鼠标点击文字特效 */
  var f_idx = 0;
  var c_idx = 0;
  jQuery(document).ready(function($) {
   $("body").click(function(e) {
-   var font = new Array("富强", "民主", "文明", "和谐", "自由", "平等", "公正" ,"法治", "爱国", "敬业", "诚信", "友善");
+   var font = new Array("富强", "民主", "文明", "和谐", "自由", "平等", "公正" ,"法治", "爱国", "敬业", "诚信", "友善","郭桓桓");
  var color = new Array('#ff0000','#eb4310','#f6941d','#fbb417','#ffff00','#cdd541','#99cc33','#3f9337','#219167','#239676','#24998d','#1f9baa','#0080ff','#3366cc','#333399','#003366','#800080','#a1488e','#c71585','#bd2158');
    var $i = $("<span />").text(font[f_idx]);
    f_idx = (f_idx + 1) % font.length;
@@ -66,9 +77,35 @@
 </script>
 
 <div class="mdui-drawer" id="left-drawer">
-    ... drawer content ...
+    <ul class="mdui-list">
+  <a href="/about" target="'_blank"><li class="mdui-list-item mdui-ripple">
+    <i class="mdui-icon material-icons">account_circle</i>
+    
+    <div class="mdui-list-item-content">关于咱</div>
+  </li></a>
+  <li class="mdui-list-item mdui-ripple">
+    <i class="mdui-icon material-icons">card_giftcard</i>
+    
+    <div class="mdui-list-item-content" mdui-dialog="{target: '#prprcloud'}">[recommended]PRPRCloud</div>
+  </li>
+  <li class="mdui-list-item mdui-ripple">
+    <i class="mdui-icon material-icons">assignment</i>
+    
+    <div class="mdui-list-item-content">按钮</div>
+  </li>
+</ul>
   </div>
-
+<div class="mdui-dialog" id="prprcloud">
+ <div class="mdui-dialog-title">提示</div>
+ <div class="mdui-dialog-content">即将带你前往PRPRCLOUD，一个稳定的网络加速器）<br>
+ 		<i class="mdui-icon material-icons">warning</i> 请勿删除邀请码信息，这将是对我极大的支持！
+ 	</div>
+ <div class="mdui-dialog-actions">
+ <button class="mdui-btn mdui-ripple" mdui-dialog-close>关闭</button>
+ <a href="https://console.prprcloud.co/auth/register?code=nwTG" target="_blank"> <button class="mdui-btn mdui-ripple" mdui-dialog-confirm>朕已阅</button> </a>
+ </div>
+</div>
+  
 	<div class="mdui-toolbar" mdui-headroom style="position: fixed; top: 0; left: 0; right: 0;">
   <a href="javascript:;" class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#left-drawer'}"><i class="mdui-icon material-icons">menu</i></a>
   <span class="mdui-typo-title">主页</span>
@@ -122,7 +159,7 @@
 <img class="mdui-img-circle" src="https://i.loli.net/2020/03/30/c375MLd4JWXZFr2.png" width="25%" height="25%"/> </div>
 <br>
 
-你好 这里是草方块的主页，请看看下面的选项，或者点击下方的 <i class="mdui-icon material-icons">play_circle_outline</i> 图标 听音乐（<p>
+你好 这里是草方块的主页，请看看下面的选项，或者点击上方的 <i class="mdui-icon material-icons">music_note</i> 图标 听音乐（<p>
 <div id="player1">
 
         </div>
@@ -133,24 +170,48 @@
   <li class="mdui-list-item mdui-ripple">
     <div class="mdui-list-item-avatar"><img src="Typecho.png"/></div>
     <div class="mdui-list-item-content">Typecho</div>
-    <a href="https://blog.acfk.xyz"><i class="mdui-list-item-icon mdui-icon material-icons">open_in_new</i></a>
-    <a href="https://type.acfk.xyz"><i class="mdui-list-item-icon mdui-icon material-icons">center_focus_strong</i></a>
+    <a href="https://blog.acfk.xyz"  target="_blank"><i class="mdui-list-item-icon mdui-icon material-icons">open_in_new</i></a>
+    <a href="https://type.acfk.xyz" target="_blank"><i class="mdui-list-item-icon mdui-icon material-icons">center_focus_strong</i></a>
   </li>
    <li class="mdui-list-item mdui-ripple">
     <div class="mdui-list-item-avatar"><img src="Hexo.png"/></div>
     <div class="mdui-list-item-content">Hexo</div>
-    <a href="https://daily.acfk.xyz"><i class="mdui-list-item-icon mdui-icon material-icons">open_in_new</i></a>
+    <a href="https://daily.acfk.xyz" target="_blank"><i class="mdui-list-item-icon mdui-icon material-icons">open_in_new</i></a>
   </li>
   <li class="mdui-list-item mdui-ripple">
     <div class="mdui-list-item-avatar"><img src="Postach.png"/></div>
     <div class="mdui-list-item-content">Postach</div>
-    <a href="https://gbxd.postach.io"><i class="mdui-list-item-icon mdui-icon material-icons">open_in_new</i></a>
+    <a href="https://gbxd.postach.io" target="_blank"><i class="mdui-list-item-icon mdui-icon material-icons">open_in_new</i></a>
+  </li>
+<li class="mdui-list-item mdui-ripple">
+    <div class="mdui-list-item-avatar"><img src="jekyll.png"/></div>
+    <div class="mdui-list-item-content">Jekyll</div>
+    <a href="https://j.acfk.xyz" target="_blank"><i class="mdui-list-item-icon mdui-icon material-icons">open_in_new</i></a>
   </li>
 </ul>
 <br>
 <br>
 <br>
-
+<div class="mdui-typo"><h5>论坛</h5></div>
+<a href="https://bbs.acfk.xyz" target="_blank"><button class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-theme-accent">点我前往</button></a> <br>
+	<br>
+	<div class="mdui-card">
+  <div class="mdui-card-media">
+    <img src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE2uCzt?ver=eb50&q=90&m=2&h=768&w=1024&b=%23FFFFFFFF&aim=true"/>
+    <div class="mdui-card-media-covered">
+      <div class="mdui-card-primary">
+        <div class="mdui-card-primary-title">广告</div>
+        <div class="mdui-card-primary-subtitle">草方块的 Office 365开发者版 车</div>
+      </div>
+      <div class="mdui-card-actions">
+        <a href="https://t.me/blockcn_tg"> <button class="mdui-btn mdui-ripple mdui-ripple-white">进群咨询</button> </a>
+      </div>
+    </div>
+  </div>
+</div>
+	<br>
+	<br>
+	
 网站已在Github上运行 <span id="runtime_span"></span> .<br/>
 		<script>
 		function show_runtime() {
@@ -248,6 +309,9 @@ ap.on('listswitch', (index) => {
             
         }
     </script>
-    <p>Made With ❤ by at-site (@Grass_block)</p>
+    <p>Made With ❤ by <a href="https://github.com/GrassBlock1/at-site" target="_blank">at-site</a> (@Grass_block)</p>
+	
+<div class="page-bg">
+</div>
 </body>
 </html>
